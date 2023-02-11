@@ -1,6 +1,6 @@
 .bgmain{
-  background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(".//assets//images/bgmain.jpg");
-  height: 100vh;
+  background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(".//assets//images/bgmain.jpg");
+  height: 110vh;
   background-repeat: no-repeat;
   background-size: cover;
 }

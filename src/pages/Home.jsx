@@ -1,31 +1,33 @@
 import React from "react";
 import CardProduct from "../components/CardProduct";
+import CardSearch from "../components/CardSearch";
 import Choiceswipper from "../components/Choiceswipper";
 import Masonrysection from "../components/Masonrysection";
 
-
 const Home = () => {
   return (
-    <header>
-      <div className="bgmain">
-        <br />
-        <div className=" my-72 flex justify-center items-center ">
-          <div className="text-white text-center flex flex-col gap-1 ">
-            <h1 className="text-3xl lg:text-7xl">Your Trip Your Adventure</h1>
-            <p className="text-lg lg:mt-2 lg:mb-2 lg:text-2xl ">
-              Choose Your Favourites
-            </p>
-            <button className="bg-slate-100 text-black py-2 px-3 mt mx-auto rounded-full ">
-              <a className="text-sm  " href="">
-                Start Your Journey
-              </a>
-            </button>
+    <>
+      <header>
+        <div className="bgmain">
+          <br />
+          <div className=" my-72 flex justify-center items-center ">
+            <div className="text-white text-center flex flex-col gap-1 ">
+              <h1 className="text-3xl lg:text-7xl">Your Trip Your Adventure</h1>
+              <p className="text-lg lg:mt-2 lg:mb-2 lg:text-2xl ">
+                Choose Your Favourites
+              </p>
+              <button className="bg-slate-100 text-black py-2 px-3 mt mx-auto rounded-full ">
+                <a className="text-sm  " href="">
+                  Start Your Journey
+                </a>
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-      <section>
-        <div className="h-fit ">
-          <div className="xl:mx-48 mx-7 pt-12">
+      </header>
+      <div className="h-fit ">
+        <div className="xl:mx-48 mx-7 pt-20">
+          <section>
             <div className="lg:flex justify-between py-4 ">
               <div className="my-5 lg:w-1/2 ">
                 <div>
@@ -40,24 +42,28 @@ const Home = () => {
                   </h1>
                 </div>
               </div>
-
               <div className="w-full lg:w-[40vw] mx-auto">
                 <Choiceswipper />
               </div>
             </div>
-            <div className="flex flex-wrap mx-5 pt-6 lg:justify-evenly">
-              <CardProduct />
-              <CardProduct />
-              <CardProduct />
-              <CardProduct />
-            </div>
-            <div className="mt-24" >
+          </section>
+          <section className="flex flex-wrap mx-5 mt-12 lg:justify-evenly">
+            <CardProduct />
+            <CardProduct />
+            <CardProduct />
+            <CardProduct />
+          </section>
+
+          <section>
+            <CardSearch />
+          </section>
+
+          <section className="mt-24">
             <Masonrysection />
-            </div>
-          </div>
+          </section>
         </div>
-      </section>
-    </header>
+      </div>
+    </>
   );
 };
 

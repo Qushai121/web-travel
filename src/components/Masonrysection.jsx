@@ -1,44 +1,46 @@
 import React from 'react';
-import { images } from "../assets/data/MasonryImages";
+import { MansoryDatas } from "../assets/data/MansoryDatas";
 import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
 
 const Masonrysection = () => {
-  console.log(images);
+
+
+  const halo = (id) => {
+    console.log(id)
+  }
   return (
     <div>
       <div>
         <div className="text-3xl flex justify-center">
           EXPLORE BEST PLACE IN THE WORLD
         </div>
-        {/* {images.map((image, i) => (
-                    <img
-                        key={i}
-                        src={image}
-                        style={{width: "100%", display: "block"}}
-                    />
-                ))} */}
+        <div className='my-12' >
+
                 <ResponsiveMasonry
-                columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}
+                columnsCountBreakPoints={{350: 1, 750: 3, 900: 4}}
             >
-                <Masonry>
-                    {images.map((image, i) => (
+                <Masonry  >
+                    {MansoryDatas.map((MansoryData, i) => (
+                      <div className='relative group' >
                         <img
+                        className="hover:scale-110 duration-300 p-2 lg:p-5 rounded-large"
                             key={i}
-                            src={image}
+                            loading="lazy"
+                            onClick={()=>halo(i)}
+                            src={MansoryData.foto}
                             style={{width: "100%", display: "block"}}
                             alt=""
                         />
+                        <div className='absolute top-3 bg-white left-8 group-hover:hidden'>
+                          <div className='' >
+                            {MansoryData.location}
+                          </div>
+                        </div>
+                      </div>
                     ))}
                 </Masonry>
             </ResponsiveMasonry>
-       
-        {/* <ResponsiveMasonry
-                columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}
-            >
-            <Masonry columnsCount={3} gutter="10px">
-               
-            </Masonry>
-            </ResponsiveMasonry> */}
+        </div>
       </div>
     </div>
   );

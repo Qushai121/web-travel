@@ -6,7 +6,7 @@ import guestacc from "../assets/images/guestacc.png";
 const Navbar = () => {
   return (
     <>
-        <div className=" bg-white rounded-xl mx-3 lg:mx-9 z-50 ">
+        <div className=" bg-white rounded-xl border-2 shadow-2xl border-slate-800 mx-3 lg:mx-9 z-50 ">
           <div className="flex py-5 mx-10 lg:mx-20 justify-between">
             <div className="font-courgette text-3xl">Traveler</div>
             <div className="flex gap-8">
@@ -15,7 +15,7 @@ const Navbar = () => {
                 <button>Home</button>
                 <button>Destination</button>
                 <button>Login</button>
-                <button className="bg-green-400 px-4 rounded-2xl">
+                <button className="bg-green-400 px-4 rounded-xl">
                   <a href="">Register</a>
                 </button>
                 </div>
@@ -24,9 +24,7 @@ const Navbar = () => {
                 <img className="w-8 rounded-full" src={guestacc} alt="" />
               </span>
               <span className="lg:hidden" >
-                <img
-              
-                 className="w-8" src={bars} alt="" />
+                <img className="w-8" src={bars} alt="" />
               </span>
             </div>
           </div>
