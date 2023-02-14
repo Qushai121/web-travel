@@ -21,19 +21,21 @@ const Masonrysection = () => {
             >
                 <Masonry  >
                     {MansoryDatas.map((MansoryData, i) => (
-                      <div className='relative group' >
+                      <div className='relative group' key={i} >
                         <img
                         className="hover:scale-110 duration-300 p-2 lg:p-5 rounded-large"
                             key={i}
-                            loading="lazy"
                             onClick={()=>halo(i)}
+                            loading="lazy"
                             src={MansoryData.foto}
                             style={{width: "100%", display: "block"}}
                             alt=""
                         />
-                        <div className='absolute top-3 bg-white left-8 group-hover:hidden'>
-                          <div className='' >
-                            {MansoryData.location}
+                        <div className='absolute bottom-6 w-1/2 right-6 backdrop-blur-sm bg-opacity-40 rounded-br-xl duration-200 bg-slate-900 group-hover:hidden'>
+                          <div className='text-left mx-4 text-slate-200 py-2' >
+                            {MansoryData.name}
+                            <div>{MansoryData.location}</div>
+                            <div>{MansoryData.price}</div>
                           </div>
                         </div>
                       </div>

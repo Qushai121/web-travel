@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
+import axios from "axios";
 import CardProduct from "../components/CardProduct";
 import CardSearch from "../components/CardSearch";
 import Choiceswipper from "../components/Choiceswipper";
 import Masonrysection from "../components/Masonrysection";
+import CardCustomer from "../components/CardCustomer";
 
 const Home = () => {
   return (
@@ -60,6 +62,12 @@ const Home = () => {
 
           <section className="mt-24">
             <Masonrysection />
+          </section>
+          <section>
+          <div className="flex justify-center text-4xl mt-44" >
+            <h1>OUR CUSTOMER STORY</h1>
+          </div>
+            <CardCustomer/>
           </section>
         </div>
       </div>

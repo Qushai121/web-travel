@@ -3,8 +3,8 @@ import sun from '../assets/images/sun.svg'
 
 const CardProduct = () => {
   return (
-    <div className='' >
-        <div className='border-solid border-2 border-green-600 rounded-lg w-36 overflow-y-scroll scrollbar-hide lg:overflow-hidden lg:w-80 mb-4 h-32 lg:mt-4 lg:rounded-lg' >
+    <div className='mx-auto' >
+        <div className='border-solid border-2 border-green-600 rounded-lg w-[35vw] overflow-y-scroll scrollbar-hide lg:overflow-hidden lg:w-80 mb-4 h-32 lg:mt-4 lg:rounded-lg' >
             <div className='text-center' >
                 <img loading='lazy' className='w-10 mx-auto' src={sun} alt=""  />
                 <h1>Calculate Weather</h1>

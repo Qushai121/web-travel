@@ -12,43 +12,51 @@ export const MansoryDatas = [
     
     {
         foto:foto2,
-        spot:"",
-        location:"halo1"
+        name:"Fuji",
+        price:"$300",
+        location:"Fuji, japan",
     },
     {
         foto:foto3,
-        spot:"",
-        location:"halo2"
+        name:"Ballon",
+        price:"$330",
+        location:"USA",
     },
     {
         foto:foto7,
-        spot:"",
-        location:"halo3"
+        name:"Siargao",
+        price:"$300",
+        location:"Siargao, Filipina",
     },
     {
         foto:foto8,
-        spot:"",
-        location:"halo4"
+        name:"Rio",
+        price:"$300",
+        location:"Rio De Janairo, Brazil",
     },
     {
         foto:foto5,
-        spot:"",
-        location:"halo5"
+        name:"Iceland",
+        price:"$300",
+        location:"Aurora, iceland",
     },
     {
         foto:foto1,
-        spot:"",
-        location:"Bali, Indonesia"
+        name:"Pagoda",
+        price:"$300",
+        location:"Bali, ,Indonesia"
     },
     {
         foto:foto4,
-        spot:"",
-        location:"halo7"
+        name:"Braies",
+        price:"$300",
+        location:"italy",
     },
     {
         foto:foto6,
-        spot:"",
-        location:"halo8"
+        name:"Oia",
+        price:"$300",
+        location:"Oia, Greece",
     },
     // foto2,
     // foto3,
